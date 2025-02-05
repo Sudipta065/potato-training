@@ -81,6 +81,7 @@ const resetGame = () => {
   font-size: 18px;
   font-weight: 600;
   color: #ff8c00;
+  margin: 10px;
 }
 .button-sort {
   background-color: #ff8c00;
