@@ -47,7 +47,7 @@ const checkSorting = () => {
 <style scoped>
 .table-container {
   background: #ffffff;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
@@ -109,6 +109,9 @@ const checkSorting = () => {
   font-size: 14px;
   font-weight: 500;
   color: #495057;
+}
+.table-cell:last-child{
+  text-align: right;
 }
 
 .name {

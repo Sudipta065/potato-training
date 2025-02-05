@@ -22,6 +22,7 @@ watchEffect(() => {
 .timer {
   font-size: 18px;
   font-weight: 600;
+  margin: 10px;
   color: #6c757d;
   background: #f8f9fa;
   padding: 10px 15px;

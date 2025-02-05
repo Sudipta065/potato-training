@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div class="container">
+    <div class="div-text" v-if="people.length === 0 || null">
+      Please Click Start Sorting to play the game!!!
+    </div>
     <button class="button-sort" @click="showModal = true">Start Sorting</button>
     <SortingModal
       v-if="showModal"
@@ -23,7 +26,7 @@ import { ref } from "vue";
 import SortingModal from "./components/SortingModal.vue";
 import SortingTable from "./components/SortingTable.vue";
 // import TimerDisplay from "./components/TimerDisplay.vue";
-import TimerDisplay from "./components/TimerDisplay.vue"
+import TimerDisplay from "./components/TimerDisplay.vue";
 import SuccessModal from "./components/SuccessModal.vue";
 
 const showModal = ref(false);
@@ -66,6 +69,19 @@ const resetGame = () => {
 };
 </script>
 <style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 80vw;
+}
+.div-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff8c00;
+}
 .button-sort {
   background-color: #ff8c00;
 }
